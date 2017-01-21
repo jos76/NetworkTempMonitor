@@ -35,7 +35,6 @@ void loop(void) {
  
   // print out the voltage
 //  Serial.print(" - ");
-  Serial.print("["); // begin message delimiter
   Serial.print(voltage);
   Serial.print("|"); // value delimiter
 //  Serial.println(" volts");
@@ -50,7 +49,7 @@ void loop(void) {
   // now convert to Fahrenheight
   float temperatureF = (temperatureC * 9.0 / 5.0) + 32.0;
   Serial.print(temperatureF); 
-  Serial.print("]"); // end message delimiter
+  Serial.println(""); // end message delimiter
 //  Serial.println(" degrees F");
  
   delay(1000);
